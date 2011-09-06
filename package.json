@@ -1,0 +1,9 @@
+{
+    "name": "wordbucket", 
+    "license": "MPL 1.1/GPL 2.0/LGPL 2.1", 
+    "author": "Adam", 
+    "version": "0.1", 
+    "fullName": "WordBucket", 
+    "id": "jid1-ZAhF4BF5MEHoBw", 
+    "description": "add-on that creates an index of words in page"
+}
