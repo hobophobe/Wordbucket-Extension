@@ -31,7 +31,10 @@ function getTextNodesIn(node, includeWhitespaceNodes) {
 
   function getTextNodes(node) {
     var i;
-    if (node && node.nodeType === node.TEXT_NODE) {
+    if (!node || (node.style && node.style.display === "none")) {
+      return;
+    }
+    else if (node.nodeType === node.TEXT_NODE) {
       if (includeWhitespaceNodes || !whitespace.test(node.nodeValue)) {
         textNodes.push(node.data);
       }
